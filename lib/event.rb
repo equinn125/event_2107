@@ -23,8 +23,11 @@ class Event
 
   def total_inventory
     @total_inventory = {}
-    hash = @food_trucks.each do|food_truck|
-      food_truck.inventory.select do |item, cost|
-        item
+    require "pry"; binding.pry
+    @food_trucks.each do|food_truck|
+      food_truck.inventory.each do |item, cost|
+        items = @food_trucks.
+      end
+      end
   end
 end
